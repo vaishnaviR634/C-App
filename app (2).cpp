@@ -1,4 +1,8 @@
 #include <string>
+int now() {
+  return std::chrono::system_clock::now().time_since_epoch() /
+         std::chrono::microseconds(1);
+}
 
 
 /*Linked list node stores variables data, timestamp and pointer to next node */

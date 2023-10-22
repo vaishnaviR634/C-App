@@ -3,6 +3,7 @@ int now() {
   return std::chrono::system_clock::now().time_since_epoch() /
          std::chrono::microseconds(1);
 }
+/*While creating a new node, to get the timestamp use now() function.*/
 
 
 /*Linked list node stores variables data, timestamp and pointer to next node */

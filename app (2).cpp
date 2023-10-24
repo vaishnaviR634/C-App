@@ -46,7 +46,7 @@ void visit_tab(BrowserHistory *bh, std::string url);
 /*Two linked lists (corresponding to two browser histories) are given. 
 They must be synced (merged into one linked lists) keeping in mind the order of timestamps.
 DO NOT change the original linked lists while doing so. */
-void sync_browser(BrowserHistory *bh1, BrowserHistory *bh2);
+BrowserHistory* sync_browser(BrowserHistory *bh1, BrowserHistory *bh2);
 
 /*Given a url (keyword), the browser history element (node of the linked list) with that url
  has to be deleted*/ 
